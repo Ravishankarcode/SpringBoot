@@ -8,3 +8,8 @@ The most common example of SSO that most of us use is by Google. When you use lo
 
 The requirement for SSO is common in enterprises where different applications come into the system at different times . Some applications are developed by different business units in isolation or some come through acquisitions. Each system come packaged with their own identity systems. Having different identity systems not only make it difficult for end users to use the applications but it also makes it difficult for an enterprise to link multiple identities to a user so that they can view a user as a single customer. Having a centralised login system is the first step to gain better understanding of the end user.
 
+# How does SSO authentication works?
+This section is not talking about a specific SSO server implementation. We will cover that when we will look at Spring Security OAuth. In this section, we will understand the basic idea behind most SSO systems. Below is a diagram that depicts the SSO flow. We have two applications app1.com and app2.com. There is a centralised SSO server login.example.com.
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
