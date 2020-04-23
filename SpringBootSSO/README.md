@@ -11,5 +11,5 @@ The requirement for SSO is common in enterprises where different applications co
 # How does SSO authentication works?
 This section is not talking about a specific SSO server implementation. We will cover that when we will look at Spring Security OAuth. In this section, we will understand the basic idea behind most SSO systems. Below is a diagram that depicts the SSO flow. We have two applications app1.com and app2.com. There is a centralised SSO server login.example.com.
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/image/sso.png)
 Format: ![Alt Text](url)
