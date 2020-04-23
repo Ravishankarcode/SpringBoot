@@ -1,6 +1,6 @@
 # Spring Boot Single Sign-on Example Application
 
-What is Single sign-on?
+# What is Single sign-on?
 
 Single sign-on (or SSO) allow users to use a single set of credentials to login into multiple related yet independent web applications. SSO also includes not asking users to login again into application B if they have already logged into application A given that A and B use SSO. SSO is achieved by implementing a centralised login system that handles authentication of users and share that information with applications that need that data.
 
