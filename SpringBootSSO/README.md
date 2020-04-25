@@ -11,4 +11,16 @@ The requirement for SSO is common in enterprises where different applications co
 # How does SSO authentication works?
 This section is not talking about a specific SSO server implementation. We will cover that when we will look at Spring Security OAuth. In this section, we will understand the basic idea behind most SSO systems. Below is a diagram that depicts the SSO flow. We have two applications app1.com and app2.com. There is a centralised SSO server login.example.com.
 
+![](images/sso.png)
 
+This is what happens in the SSO flow:
+
+1. A user goes to the app1.com for the first time. As user is not logged in, a login button is available to the user. User clicks the login button and user is redirected to the SSO server.
+2. User enters credentials on the login page rendered by the SSO server. SSO server validates the credentials and generates a SSO token. SSO server sets the SSO token in the cookie for future login attempts by the user.
+3. SSO server redirects user to the app1.com. In the redirect URL, it also appends SSO token as the query parameter.
+4. app1.com saves the token in its cookie and change view to the logged in user. app1.com can get information about the user either by querying the SSO server or if token is a JWT token then it can get basic user information from the token itself.
+5. Now, the same user tries to access app2.com. As an application can only access cookie for the same origin it has no knowledge that user is logged in to app1.com. So, user will still be shown login button on app2.
+6. User clicks the login button and then user is redirected to the SSO server. SSO server sees that it already has a cookie set so it will immediately redirect the user to app2.com with SSO token appended in the URL as query parameter.
+7. app2.com stores the token in the cookie and change its view to logged in user.
+
+At the end of this process there will be three cookies set in the user browser each for app1.com, app2.com, and login.example.com domains.
