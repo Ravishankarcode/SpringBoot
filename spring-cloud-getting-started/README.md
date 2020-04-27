@@ -4,7 +4,7 @@
 Issue: TypeNotPresentExceptionProxy
 
 
-Table 1. Release train Spring Boot compatibility
+Resolve: Check in pom.xml that correct Release train Spring Boot compatibility
 
 Release Train	 |  Boot Version
 -------------  |  -------------  
