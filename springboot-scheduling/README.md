@@ -8,6 +8,9 @@ First use `@EnableScheduling` annotation of Configuration class
 @Scheduled(cron = "0 0 6 * * ?")
 ```
 
+Use this refrence for more details [Crone](https://en.wikipedia.org/wiki/Cron#Predefined_scheduling_definitions).
+
+
 ## Scheduling Using `fixedRate`
 If a fixed rate execution is desired, simply change the property name specified within the annotation.
 The following would be executed every 5 seconds measured between the successive start times of each invocation.
