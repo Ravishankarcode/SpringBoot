@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <title>Schedular Demo</title>
+   <link rel="stylesheet" th:href="@{/css/style.css}" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h3> Demo POC with Spring Batch and Scheduler</h3>
+
+<table class="table">
+<tr>
+ 
+ <th> 
+	<form action="/getData">
+	<button type="submit" class="btn btn-info">Show Employees From DB</button>
+	<p style="color: red;"> <span th:utext="${nodataMsg}"></span></p>
+	</form>
+ </th>
+ 
+  <th>
+  <form action="/load">
+  <button type="submit" class="btn btn-success">Store Employee From CSV</button>
+  <p style="color: royalblue;"> <span th:utext="${msg}"></span></p>
+  </form>
+ </th>
+ 
+</tr>
+</table>
+<div class="tabledata">
+  <h2>List of Employees</h2>
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>CreatedTS</th>
+        <th>ModifiedTS</th>
+    </tr>
+	</thead>
+    <tbody>
+    <tr th:each="employee : ${employees}">
+        <td th:text="${employee.id}">id</td>
+        <td th:text="${employee.employeeName}">name</td>
+        <td th:text="${employee.designation}">designation</td>
+        <td th:text="${employee.createdTS}">createdTS</td>
+        <td th:text="${employee.modifiedTS}">modifiedTS</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+</div>
+</body>
+</html>
