@@ -7,8 +7,8 @@ First use `@EnableScheduling` annotation of Configuration class
 ```
 @Scheduled(cron = "0 0 6 * * ?")
 ```
+Each line of a crontab file represents a job, and looks like this:
 
-![](images/sso.png)
 ![](images/Crone1.png)
 
 
