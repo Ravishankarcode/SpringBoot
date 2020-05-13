@@ -8,7 +8,7 @@ First use `@EnableScheduling` annotation of Configuration class
 @Scheduled(cron = "0 0 6 * * ?")
 ```
 
-Use this refrence for more details.
+Use this refrence for more details [Crone](https://en.wikipedia.org/wiki/Cron#Predefined_scheduling_definitions).
 
 
 ## Scheduling Using `fixedRate`
