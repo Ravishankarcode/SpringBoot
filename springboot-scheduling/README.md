@@ -8,11 +8,9 @@ First use `@EnableScheduling` annotation of Configuration class
 @Scheduled(cron = "0 0 6 * * ?")
 ```
 
+![](images/sso.png)
 ![](images/Crone1.png)
 
-![](images/Crone2.png)
-
-![](images/Crone3.png)
 
 ## Scheduling Using `fixedRate`
 If a fixed rate execution is desired, simply change the property name specified within the annotation.
