@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+  
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %r [%t] %-5p %c :: %m%n</Property>
+        <Property name="APP_LOG_ROOT">c:/temp</Property>
+    </Properties>
+  
+    <Appenders>
+  
+        <Console name="console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+          
+        <RollingFile name="applicationLog" fileName="${sys:APP_LOG_ROOT}/log4j2logging.log"
+            filePattern="${sys:APP_LOG_ROOT}/log4j2logging-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+          
+    </Appenders>
+  
+    <Loggers>
+      
+        <Logger name="com.example.log4j2" additivity="false" level="debug">
+            <AppenderRef ref="applicationLog" />
+            <AppenderRef ref="console"  />
+        </Logger>
+         
+        <Logger name="com.example.log4j2" additivity="false" level="info">
+            <AppenderRef ref="applicationLog" />
+            <AppenderRef ref="console" />
+        </Logger>
+
+                  
+        <Root level="INFO">
+            <AppenderRef ref="console"/>
+        </Root>
+  
+    </Loggers>
+  
+</Configuration>

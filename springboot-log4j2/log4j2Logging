@@ -1,0 +1,25 @@
+2020-05-23 10:32:13.929  INFO 2472 --- [main] com.example.log4j2.Log4j2Application     : Starting Log4j2Application on HMECL002810A with PID 2472 (C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j\target\classes started by Ravishankar.kumar in C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j)
+2020-05-23 10:32:13.932  INFO 2472 --- [main] com.example.log4j2.Log4j2Application     : No active profile set, falling back to default profiles: default
+2020-05-23 10:32:14.675  INFO 2472 --- [main] com.example.log4j2.Log4j2Application     : Started Log4j2Application in 1.103 seconds (JVM running for 1.605)
+2020-05-23 10:32:14.683  INFO 2472 --- [main] c.e.log4j2.service.EmployeeService       : Calling Employee by Id::1
+2020-05-23 10:32:14.685  INFO 2472 --- [main] com.example.log4j2.Log4j2Application     : Calling GetEmployeeId Method Employee [id=1, firstname=Ravi, lastname=Shankar]
+2020-05-23 10:42:49.745  INFO 1668 --- [main] com.example.log4j2.Log4j2Application     : Starting Log4j2Application on HMECL002810A with PID 1668 (C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j\target\classes started by Ravishankar.kumar in C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j)
+2020-05-23 10:42:49.747  INFO 1668 --- [main] com.example.log4j2.Log4j2Application     : No active profile set, falling back to default profiles: default
+2020-05-23 10:42:50.381  INFO 1668 --- [main] com.example.log4j2.Log4j2Application     : Started Log4j2Application in 1.005 seconds (JVM running for 1.391)
+2020-05-23 10:42:50.386  INFO 1668 --- [main] c.e.log4j2.service.EmployeeService       : Calling Employee by Id::1
+2020-05-23 10:42:50.387  INFO 1668 --- [main] com.example.log4j2.Log4j2Application     : Calling GetEmployeeId Method Employee [id=1, firstname=Ravi, lastname=Shankar]
+2020-05-23 10:46:37.792  INFO 14176 --- [main] com.example.log4j2.Log4j2Application     : Starting Log4j2Application on HMECL002810A with PID 14176 (C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j\target\classes started by Ravishankar.kumar in C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j)
+2020-05-23 10:46:37.794  INFO 14176 --- [main] com.example.log4j2.Log4j2Application     : No active profile set, falling back to default profiles: default
+2020-05-23 10:46:38.385  INFO 14176 --- [main] com.example.log4j2.Log4j2Application     : Started Log4j2Application in 0.952 seconds (JVM running for 1.413)
+2020-05-23 10:46:38.388  INFO 14176 --- [main] c.e.log4j2.service.EmployeeService       : Calling Employee by Id::1
+2020-05-23 10:46:38.390  INFO 14176 --- [main] com.example.log4j2.Log4j2Application     : Calling GetEmployeeId Method Employee [id=1, firstname=Ravi, lastname=Shankar]
+2020-05-23 11:07:33.482  INFO 45148 --- [main] com.example.log4j2.Log4j2Application     : Starting Log4j2Application on HMECL002810A with PID 45148 (C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j\target\classes started by Ravishankar.kumar in C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j)
+2020-05-23 11:07:33.485  INFO 45148 --- [main] com.example.log4j2.Log4j2Application     : No active profile set, falling back to default profiles: default
+2020-05-23 11:07:34.206  INFO 45148 --- [main] com.example.log4j2.Log4j2Application     : Started Log4j2Application in 1.139 seconds (JVM running for 1.783)
+2020-05-23 11:07:34.210  INFO 45148 --- [main] c.e.log4j2.service.EmployeeService       : Calling Employee by Id::1
+2020-05-23 11:07:34.212  INFO 45148 --- [main] com.example.log4j2.Log4j2Application     : Calling GetEmployeeId Method Employee [id=1, firstname=Ravi, lastname=Shankar]
+2020-05-23 11:11:06.358  INFO 8848 --- [main] com.example.log4j2.Log4j2Application     : Starting Log4j2Application on HMECL002810A with PID 8848 (C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j\target\classes started by Ravishankar.kumar in C:\Users\Ravishankar.kumar\Desktop\MyWorkspace\Schedular\slf4j)
+2020-05-23 11:11:06.361  INFO 8848 --- [main] com.example.log4j2.Log4j2Application     : No active profile set, falling back to default profiles: default
+2020-05-23 11:11:07.124  INFO 8848 --- [main] com.example.log4j2.Log4j2Application     : Started Log4j2Application in 1.165 seconds (JVM running for 1.709)
+2020-05-23 11:11:07.127  INFO 8848 --- [main] c.e.log4j2.service.EmployeeService       : Calling Employee by Id::4
+2020-05-23 11:11:07.129  INFO 8848 --- [main] com.example.log4j2.Log4j2Application     : Calling GetEmployeeId Method null
