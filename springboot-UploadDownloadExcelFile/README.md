@@ -2,4 +2,4 @@
 
 ## Postman help for Download
 
-![](/images/Postman.png)
+![](https://raw.githubusercontent.com/Ravishankarcode/SpringBoot/master/springboot-UploadDownloadExcelFile/images/Postman.PNG)
