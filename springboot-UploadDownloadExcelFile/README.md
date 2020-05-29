@@ -2,4 +2,4 @@
 
 ## Postman help for Download
 
-![](images/Postman.png)
+![](/images/Postman.png)
